@@ -1,6 +1,6 @@
 # Minimal
 <img src="/screenshots/app_icon.png" height="200px"/> <br>
-A fully Material ToDo app with minimal features, just enough to be useful.
+A basic Material Design ToDo App.
 
 
 #Screenshots:
