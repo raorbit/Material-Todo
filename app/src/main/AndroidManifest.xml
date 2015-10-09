@@ -2,10 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.admala.materialtodo" >
 
-    <uses-permission android:name="ANDROID.PERMISSION.INTERNET"/>
-    <uses-permission android:name="ANDROID.PERMISSION.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="ANDROID.PERMISSION.INTERNET" />
+    <uses-permission android:name="ANDROID.PERMISSION.ACCESS_NETWORK_STATE" />
 
-    <!--We set theme to DarkTheme because when the app opens it shows
+    <!--
+    We set theme to DarkTheme because when the app opens it shows
     a white screen if our theme here is LightTheme. The screen is shown for
     about 1 second, but it's jarring if users have set Night Mode to true.
     -->
@@ -14,44 +15,40 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/CustomStyle.DarkTheme"
-        >
+        android:theme="@style/CustomStyle.DarkTheme" >
         <activity
             android:name="com.admala.materialtodo.MainActivity"
+            android:label="@string/app_name"
             android:launchMode="singleTop"
-            android:screenOrientation="portrait"
-            android:label="@string/app_name" >
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name="com.admala.materialtodo.AddToDoActivity"
-            android:screenOrientation="portrait"
+        <activity
+            android:name="com.admala.materialtodo.AddToDoActivity"
             android:parentActivityName="com.admala.materialtodo.MainActivity"
-            />
-
-        <activity android:name="com.admala.materialtodo.AboutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.admala.materialtodo.AboutActivity"
             android:label="@string/app_name"
-            android:parentActivityName="com.admala.materialtodo.MainActivity"
-            />
+            android:parentActivityName="com.admala.materialtodo.MainActivity" />
+        <activity
+            android:name="com.admala.materialtodo.ReminderActivity"
+            android:label="@string/app_name" />
 
-        <activity android:name="com.admala.materialtodo.ReminderActivity"
-            android:label="@string/app_name"
-            />
+        <service android:name="com.admala.materialtodo.TodoNotificationService" />
+        <service android:name="com.admala.materialtodo.DeleteNotificationService" />
 
-        <service android:name="com.admala.materialtodo.TodoNotificationService"
-            />
-        <service android:name="com.admala.materialtodo.DeleteNotificationService"
-            />
-        <activity android:name="com.admala.materialtodo.SettingsActivity"
-            android:parentActivityName="com.admala.materialtodo.MainActivity"
-
-            />
-
+        <activity
+            android:name="com.admala.materialtodo.SettingsActivity"
+            android:parentActivityName="com.admala.materialtodo.MainActivity" />
+        <activity
+            android:name="com.admala.materialtodo.BaseDrawer"
+            android:label="@string/title_activity_base_drawer" >
+        </activity>
     </application>
-
 
 </manifest>
