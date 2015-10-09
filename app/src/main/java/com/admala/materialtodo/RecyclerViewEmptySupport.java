@@ -1,4 +1,4 @@
-package com.example.admala.toodle;
+package com.admala.materialtodo;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;

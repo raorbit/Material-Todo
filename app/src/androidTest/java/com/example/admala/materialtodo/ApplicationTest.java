@@ -1,4 +1,4 @@
-package com.example.admala.toodle;
+package com.example.admala.materialtodo;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

@@ -1,7 +1,9 @@
-package com.example.admala.toodle;
+package com.admala.materialtodo;
 
 import android.content.Context;
 import android.content.res.TypedArray;
+
+import com.example.admala.materialtodo.R;
 
 
 public class Utils {

@@ -1,4 +1,4 @@
-package com.example.admala.toodle;
+package com.admala.materialtodo;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.preference.CheckBoxPreference;
 import android.preference.PreferenceFragment;
 
+import com.example.admala.materialtodo.R;
 import com.google.android.gms.analytics.HitBuilders;
 
 public class SettingsFragment extends PreferenceFragment implements SharedPreferences.OnSharedPreferenceChangeListener{

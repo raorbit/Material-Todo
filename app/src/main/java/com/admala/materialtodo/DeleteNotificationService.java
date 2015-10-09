@@ -1,4 +1,4 @@
-package com.example.admala.toodle;
+package com.admala.materialtodo;
 import android.app.IntentService;
 import android.content.Intent;
 import android.content.SharedPreferences;

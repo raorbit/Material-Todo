@@ -1,4 +1,4 @@
-package com.example.admala.toodle;
+package com.admala.materialtodo;
 
 import android.app.AlarmManager;
 import android.app.PendingIntent;
@@ -15,7 +15,6 @@ import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.helper.ItemTouchHelper;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -29,6 +28,7 @@ import android.widget.TextView;
 
 import com.amulyakhare.textdrawable.TextDrawable;
 import com.amulyakhare.textdrawable.util.ColorGenerator;
+import com.example.admala.materialtodo.R;
 import com.google.android.gms.analytics.HitBuilders;
 
 import org.json.JSONException;

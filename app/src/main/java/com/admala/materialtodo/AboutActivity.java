@@ -1,6 +1,5 @@
-package com.example.admala.toodle;
+package com.admala.materialtodo;
 
-import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
@@ -9,11 +8,11 @@ import android.os.Bundle;
 import android.support.v4.app.NavUtils;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
+import com.example.admala.materialtodo.R;
 import com.google.android.gms.analytics.HitBuilders;
 
 public class AboutActivity extends AppCompatActivity {

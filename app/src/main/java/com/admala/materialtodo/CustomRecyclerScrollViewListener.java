@@ -1,7 +1,6 @@
-package com.example.admala.toodle;
+package com.admala.materialtodo;
 
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 
 public abstract class CustomRecyclerScrollViewListener extends RecyclerView.OnScrollListener {
     int scrollDist = 0;

@@ -1,6 +1,8 @@
-package com.example.admala.toodle;
+package com.admala.materialtodo;
 
 import android.content.res.Resources;
+
+import com.example.admala.materialtodo.R;
 
 /**
  * Created by Rahul Admala on 9/25/15.
