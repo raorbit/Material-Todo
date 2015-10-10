@@ -30,6 +30,8 @@ import com.amulyakhare.textdrawable.TextDrawable;
 import com.amulyakhare.textdrawable.util.ColorGenerator;
 import com.example.admala.materialtodo.R;
 import com.google.android.gms.analytics.HitBuilders;
+import com.mikepenz.materialdrawer.AccountHeader;
+import com.mikepenz.materialdrawer.AccountHeaderBuilder;
 import com.mikepenz.materialdrawer.Drawer;
 import com.mikepenz.materialdrawer.DrawerBuilder;
 import com.mikepenz.materialdrawer.model.PrimaryDrawerItem;
@@ -74,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
             "Get car washed",
             "Get my dry cleaning"
     };
-
+    private AccountHeader headerResult;
 
 
     public static ArrayList<ToDoItem> getLocallyStoredData(StoreRetrieveData storeRetrieveData){
@@ -186,14 +188,20 @@ public class MainActivity extends AppCompatActivity {
         android.support.v7.widget.Toolbar toolbar = (android.support.v7.widget.Toolbar)findViewById(R.id.toolbar);
         toolbar.setTitle(R.string.app_name);
         setSupportActionBar(toolbar);
+
+        headerResult = new AccountHeaderBuilder()
+                .withActivity(this)
+                .withHeaderBackground(R.drawable.header)
+                .build();
         drawer= new DrawerBuilder()
                 .withActivity(this)
                 .withToolbar(toolbar)
                 .withHasStableIds(true)
+                .withAccountHeader(headerResult)
                 .withSavedInstance(savedInstanceState)
-                .addDrawerItems(
-                        new PrimaryDrawerItem().withName(R.string.drawer_item_settings).withIdentifier(0).withSelectable(false)
-                )
+                         .addDrawerItems(
+                                 new PrimaryDrawerItem().withName(R.string.drawer_item_settings).withIdentifier(0).withSelectable(false)
+                         )
                 .withOnDrawerItemClickListener(new Drawer.OnDrawerItemClickListener() {
                     @Override
                     public boolean onItemClick(View view, int position, IDrawerItem drawerItem) {
