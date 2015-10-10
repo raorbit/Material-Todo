@@ -45,10 +45,6 @@
         <activity
             android:name="com.admala.materialtodo.SettingsActivity"
             android:parentActivityName="com.admala.materialtodo.MainActivity" />
-        <activity
-            android:name="com.admala.materialtodo.BaseDrawer"
-            android:label="@string/title_activity_base_drawer" >
-        </activity>
     </application>
 
 </manifest>

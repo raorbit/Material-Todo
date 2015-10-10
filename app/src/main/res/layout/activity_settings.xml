@@ -13,15 +13,26 @@
         android:minHeight="?attr/actionBarSize"
         android:background="?attr/colorPrimary"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
+        android:layout_height="wrap_content"
+        android:title="@string/app_name">
+        <!--<TextView-->
+        <!--android:textSize="24sp"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:textColor="@android:color/white"-->
+        <!--android:text="Toodle"-->
+        <!--fontPath="fonts/Aller_Regulat.ttf"-->
+        <!--android:padding="8dp"-->
+        <!--android:layout_height="wrap_content" />-->
 
     </android.support.v7.widget.Toolbar>
 
+
+
     <LinearLayout
         android:orientation="vertical"
+        android:layout_below="@+id/toolbar"
         android:id="@+id/mycontent"
-        android:layout_below="@id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
